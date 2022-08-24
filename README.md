@@ -178,9 +178,8 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 ## 2.5. 定量的な説明を行う
 
-「多い」「ちょっと減った」「だいたい $48[{\rm g}]$ になった」など，口語をはじめ曖昧な表現はしない．
-
-「 $10[\%]$ 多い」「 $8[{\rm pixel}]$ 減った」「 $48\pm 3[{\rm g}]$ となった」など，定量的な数値と並べて表現する．
+「多い」「ちょっと減った」「だいたい $48[\rm{g}]$ になった」など，口語をはじめ曖昧な表現はしない．<br>
+「 $10[\\%]$ 多い」「 $8[{\rm pixel}]$減った」「 $48\pm 3[{\rm g}]$ となった」など，定量的な数値と並べて表現する．
 
 ## 2.6. 参考文献の記述方法
 
@@ -228,11 +227,11 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 同時に扱える比較可能な画像(e.g. 入力 - 出力，視点だけが違う画像，条件を変更しただけの画像など)に，別々のナンバリングをしている点．
 
-<img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-16 17.49.19.png" alt="スクリーンショット 2022-08-16 17.49.19" style="zoom:50%;" />
+<img src="./img/bad_caption.png" alt="bad_caption" style="zoom:50%;" />
 
 改善結果
 
-<img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-16 17.51.09.png" alt="スクリーンショット 2022-08-16 17.51.09" style="zoom:50%;" />
+<img src="./img/good_caption.png" alt="good_caption" style="zoom:50%;" />
 
 同時に扱うべき画像に同じ図番号を割り振った上で， **(a),(b)** や **(i),(ii)** のサブナンバリングを行う．
 
@@ -250,7 +249,7 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 座標抽出に[WebPlotDigitizer](https://apps.automeris.io/wpd/)なるオンラインツールがある．実際にグラフ画像を自作した例を次に示す．
 
-![スクリーンショット 2022-08-16 18.23.55](/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-16 18.23.55.png)
+![get_raw_data](./img/get_raw_data.png)
 
 Matplotlibである必要はなく，CSVデータを可視化できるExcelでも良い．グラフを手元で描画できるので，実験結果を埋め込むこともできる．
 
@@ -272,7 +271,7 @@ Matplotlibである必要はなく，CSVデータを可視化できるExcelで�
 
 [NN-SVG](https://alexlenail.me/NN-SVG/)を使えば，単純なニューラルネットワークを描画できる．
 
-![スクリーンショット 2022-08-16 23.28.15](/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-16 23.28.15.png)
+![nn_svg](./img/nn_svg.png)
 
 Kerasを使っている人はSequentialスタイルでネットワークを描画できる[ツール](https://github.com/yu4u/convnet-drawer)もある．
 
@@ -308,7 +307,7 @@ direction LR
 
 いらすとやだけではない．他にもたくさんのフリーイラストは世の中に存在する．いらすとやは[1資料に20素材までしか使えない](https://www.irasutoya.com/p/terms.html)．
 
-* [StorySet](https://storyset.com/)：引用元リンクさえ示せば無料で商用使用が可能である上，Web上でそのまま加工が可能である．次の画像は左から順に加工をして保存したものである．基本的に写っているオブジェクトは1つ1つ非表示にできる．<img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-17 0.57.52.png" alt="スクリーンショット 2022-08-17 0.57.52" style="zoom:67%;" />
+* [StorySet](https://storyset.com/)：引用元リンクさえ示せば無料で商用使用が可能である上，Web上でそのまま加工が可能である．次の画像は左から順に加工をして保存したものである．基本的に写っているオブジェクトは1つ1つ非表示にできる．<img src="./img/story_set.png" alt="story_set" style="zoom:67%;" />
 * [unDraw](https://undraw.co/illustrations)：こっちは色の変更ができるぐらいであるが多くのフリーイラストがある．原型はSVGなので知識があれば編集可能．
 
 # 4. 数式，モデル
@@ -319,7 +318,7 @@ PowerPointであれば上のメニューバーの`挿入→数式`で数式を�
 
 基本的な記法は，だいぶ前にPop先生が送ってくれた[記法まとめ](https://www.deeplearningbook.org/contents/notation.html)があるので参考にすると良い．
 
-ただ小谷先生的にVectorやMatrixは斜体 $\boldsymbol{a,A}$ではなく立体 $\mathbf{a,A}$らしい．Pop先生曰くScalarとその他ということで区別をしたいという意図があるようだ．またこれに伴い，上付きの矢印を用いたベクトル表現は使われない．
+ただ小谷先生的にVectorやMatrixは斜体 $ \boldsymbol{a,A} $ ではなく立体 $\mathbf{a,A}$ らしい．Pop先生曰くScalarとその他ということで区別をしたいという意図があるようだ．またこれに伴い，上付きの矢印を用いたベクトル表現は使われない．
 
 数式を記述すると，デフォルトの斜体で記述される．PowerPointやWordでは`Ctrl + i`で**i**talic体モード，すなわち斜体モードを切り替えることができる．斜体フォントを選択した状態で`Ctrl + i`とすると立体になる．同様に太字(**B**old)の切り替えをしたい場合は`Ctrl + b`である．これら複数を併用してVectorやMatrixの記述を行う必要がある．
 
@@ -336,7 +335,7 @@ PowerPointであれば上のメニューバーの`挿入→数式`で数式を�
 | $\cdot$                     | `\cdot`                     | $\cdots$         | `\cdots`         | $\sim$                           | `\sim`                         |
 | $\lim_{x\rightarrow\infty}$ | `\lim_{x\rightarrow\infty}` | $x\in\mathbb{R}$ | `x \in \doubleR` | $\mathbb{X}^{W\times H\times C}$ | `\doubleX^{W\times H\times C}` |
 
-PowerPoint，Wordで $\R$ は`\doubleR`だが，TeXでは`\R`や`\mathbb{R}`であるなどの差分があることに注意．
+PowerPoint，Wordで $\doubleR$ は`\doubleR`だが，TeXでは`\mathbb{R}`であるなどの差分があることに注意．
 
 **数式の記法には派閥による依存がある**ことを念頭に，小谷画像処理研究室のフォーマットであるとして示す．特に物理学界隈と情報技術界隈では明確に差分があるので注意．
 
@@ -482,13 +481,13 @@ TeX: \sin
 
 変数も関数も詳細に定義すること．特に次元数や引数．
 
-<img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-17 16.25.15.png" alt="スクリーンショット 2022-08-17 16.25.15" style="zoom:67%;" />
+<img src="./img/diagram_io.png" alt="diagram_io" style="zoom:67%;" />
 
 図の枠線は太くする．フォントサイズも気にする．
 
 モデルを更新する方法が重み更新だとしたらどのようにどの値を更新するか記述する．
 
-<img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-17 16.32.42.png" alt="スクリーンショット 2022-08-17 16.32.42" style="zoom:67%;" />
+<img src="./img/diagram_with_updater.png" alt="diagram_with_updater" style="zoom:67%;" />
 
 画像生成モデル(Image **G**enerator)があるなら，関数 $G(\cdot)$ として定義する．
 

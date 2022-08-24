@@ -179,7 +179,7 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 ## 2.5. 定量的な説明を行う
 
 「多い」「ちょっと減った」「だいたい $48[\rm{g}]$ になった」など，口語をはじめ曖昧な表現はしない．<br>
-「 $10[\\%]$ 多い」「 $8[{\rm pixel}]$減った」「 $48\pm 3[{\rm g}]$ となった」など，定量的な数値と並べて表現する．
+「 $10[％]$ 多い」「 $8[{\rm pixel}]$減った」「 $48\pm 3[{\rm g}]$ となった」など，定量的な数値と並べて表現する．
 
 ## 2.6. 参考文献の記述方法
 
@@ -335,7 +335,7 @@ PowerPointであれば上のメニューバーの`挿入→数式`で数式を�
 | $\cdot$                     | `\cdot`                     | $\cdots$         | `\cdots`         | $\sim$                           | `\sim`                         |
 | $\lim_{x\rightarrow\infty}$ | `\lim_{x\rightarrow\infty}` | $x\in\mathbb{R}$ | `x \in \doubleR` | $\mathbb{X}^{W\times H\times C}$ | `\doubleX^{W\times H\times C}` |
 
-PowerPoint，Wordで $\doubleR$ は`\doubleR`だが，TeXでは`\mathbb{R}`であるなどの差分があることに注意．
+PowerPoint，Wordで $\mathbb{R}$ は`\doubleR`だが，TeXでは`\mathbb{R}`であるなどの差分があることに注意．
 
 **数式の記法には派閥による依存がある**ことを念頭に，小谷画像処理研究室のフォーマットであるとして示す．特に物理学界隈と情報技術界隈では明確に差分があるので注意．
 

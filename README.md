@@ -64,7 +64,7 @@
 
 「章」を飛ばしていきなり「節，項」が出てきたことを指摘された．改善結果，「章，節，項」の順に並んだ．
 
-**節(e.g. "2.1.")**のスライドがあるならその前に必ず**章(e.g. "2.")**のスライドが必要である．
+ **節(e.g. "2.1.")**のスライドがあるならその前に必ず**章(e.g. "2.")**のスライドが必要である．
 
 同様に，**項(e.g. "2.1.1.")**のスライドがあるならその前に**節(e.g. "2.1.")**のスライドが必要である．
 
@@ -137,7 +137,7 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 ## 2.3. 文章の表現に明確な区別をつけること
 
-**説明(Describe, Explain)**と**箇条書き(Itemize)**や**列挙(Enumerate)**を記述するときは明確な区別が必要．
+ **説明(Describe, Explain)**と**箇条書き(Itemize)**や**列挙(Enumerate)**を記述するときは明確な区別が必要．
 
 ### 2.3.1. ダメな例 - 池村のケース
 
@@ -178,9 +178,9 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 ## 2.5. 定量的な説明を行う
 
-「多い」「ちょっと減った」「だいたい$48[{\rm g}]$になった」など，口語をはじめ曖昧な表現はしない．
+「多い」「ちょっと減った」「だいたい $48[{\rm g}]$ になった」など，口語をはじめ曖昧な表現はしない．
 
-「$10[\%]$多い」「$8[{\rm pixel}]$減った」「$48\pm 3[{\rm g}]$となった」など，定量的な数値と並べて表現する．
+「 $10[\%]$ 多い」「 $8[{\rm pixel}]$ 減った」「 $48\pm 3[{\rm g}]$ となった」など，定量的な数値と並べて表現する．
 
 ## 2.6. 参考文献の記述方法
 
@@ -234,7 +234,7 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 <img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-16 17.51.09.png" alt="スクリーンショット 2022-08-16 17.51.09" style="zoom:50%;" />
 
-同時に扱うべき画像に同じ図番号を割り振った上で，**(a),(b)**や**(i),(ii)**のサブナンバリングを行う．
+同時に扱うべき画像に同じ図番号を割り振った上で， **(a),(b)** や **(i),(ii)** のサブナンバリングを行う．
 
 この効果として，改善前は同時に扱うべき画像には同じ説明がついてしまう問題があったが，それを図番号のあるキャプションに書き，差分だけをサブナンバーの後に記述できることが挙げられる．上の例では「Swapped Face」の文章が被っていたが，改善することでより詳細を記述できるようになった．これも序盤に挙げた論文の階層構造と同様，画像キャプションも階層構造を成していることで整然性が向上する．
 
@@ -319,7 +319,7 @@ PowerPointであれば上のメニューバーの`挿入→数式`で数式を�
 
 基本的な記法は，だいぶ前にPop先生が送ってくれた[記法まとめ](https://www.deeplearningbook.org/contents/notation.html)があるので参考にすると良い．
 
-ただ小谷先生的にVectorやMatrixは斜体$\boldsymbol{a,A}$ではなく立体$\mathbf{a,A}$らしい．Pop先生曰くScalarとその他ということで区別をしたいという意図があるようだ．またこれに伴い，上付きの矢印を用いたベクトル表現は使われない．
+ただ小谷先生的にVectorやMatrixは斜体 $\boldsymbol{a,A}$ではなく立体 $\mathbf{a,A}$らしい．Pop先生曰くScalarとその他ということで区別をしたいという意図があるようだ．またこれに伴い，上付きの矢印を用いたベクトル表現は使われない．
 
 数式を記述すると，デフォルトの斜体で記述される．PowerPointやWordでは`Ctrl + i`で**i**talic体モード，すなわち斜体モードを切り替えることができる．斜体フォントを選択した状態で`Ctrl + i`とすると立体になる．同様に太字(**B**old)の切り替えをしたい場合は`Ctrl + b`である．これら複数を併用してVectorやMatrixの記述を行う必要がある．
 
@@ -330,13 +330,13 @@ PowerPointであれば上のメニューバーの`挿入→数式`で数式を�
 | $\alpha$                    | `\alpha`                    | $\beta$          | `\beta`          | $\gamma$                         | `\gamma`                       |
 | $\Sigma$                    | `\Sigma`                    | $\sigma$         | `\sigma`         | $\varsigma$                      | `\varsigma`                    |
 | $\Pi$                       | `\Pi`                       | $\pi$            | `\pi`            | $\varpi$                         | `\varpi`                       |
-| $\Rho$                      | `\Rho`                      | $\rho$           | `\rho`           | $\varrho$                        | `\varrho`                      |
+| $\simeq$                    | `\simeq`                    | $\rho$           | `\rho`           | $\varrho$                        | `\varrho`                      |
 | $\rightarrow$               | `\rightarrow`               | $\leftarrow$     | `\leftarrow`     | $\equiv$                         | `\equiv`                       |
 | $\times$                    | `\times`                    | $\div$           | `\div`           | $\approx$                        | `\approx`                      |
 | $\cdot$                     | `\cdot`                     | $\cdots$         | `\cdots`         | $\sim$                           | `\sim`                         |
 | $\lim_{x\rightarrow\infty}$ | `\lim_{x\rightarrow\infty}` | $x\in\mathbb{R}$ | `x \in \doubleR` | $\mathbb{X}^{W\times H\times C}$ | `\doubleX^{W\times H\times C}` |
 
-PowerPoint，Wordで$\R$は`\doubleR`だが，TeXでは`\R`や`\mathbb{R}`であるなどの差分があることに注意．
+PowerPoint，Wordで $\R$ は`\doubleR`だが，TeXでは`\R`や`\mathbb{R}`であるなどの差分があることに注意．
 
 **数式の記法には派閥による依存がある**ことを念頭に，小谷画像処理研究室のフォーマットであるとして示す．特に物理学界隈と情報技術界隈では明確に差分があるので注意．
 
@@ -346,9 +346,9 @@ PowerPoint，Wordで$\R$は`\doubleR`だが，TeXでは`\R`や`\mathbb{R}`であ
 
 ### 4.1.0. 微分の記法
 
-Leibniz's notationである$\frac{\rm d}{{\rm d}x}y$において$\frac{d}{dx}y$で書く派閥もいる．小谷先生は後者．したがって積分も同様に$y=\int f(x)dx$と書かれる．
+Leibniz's notationである $\frac{\rm d}{{\rm d}x}y$ において $\frac{d}{dx}y$ で書く派閥もいる．小谷先生は後者．したがって積分も同様に $y=\int f(x)dx$ と書かれる．
 
-偏微分記号$\partial$`\partial`に立体は無い．
+偏微分記号 $\partial$ `\partial`に立体は無い．
 
 ### 4.1.1. 初等関数 - 立体
 
@@ -365,11 +365,11 @@ PowerPoint, Word: \sin + space
 TeX: \sin
 ```
 
-* 指数関数(**Exp**onential Func.)： $e^{x}$，$\exp{\left(x\right)}$など．ネイピア数$e$は定数だが小谷先生は斜体派らしい．浅野先生は立体派．
-* 対数関数(**Log**arithm Func.)：$\log{x}$，$\ln{x}$，$\log_2{x}$など．
-* 三角関数(Trigonometric Func.)：$\sin(x)$，$\cos(x)$，$\tan(x)$など．
-* 逆三角関数(Inverse Trigonometric Func.)：$\arcsin(x)$，$\arccos(x)$，$\arctan(x)$など．
-* 双曲線関数(**H**yperbolic Func.)：$\sinh(x)$，$\cosh(x)$，$\tanh(x)$．
+* 指数関数(**Exp**onential Func.)： $e^{x}$, $\exp{\left(x\right)}$など．ネイピア数 $e$ は定数だが小谷先生は斜体派らしい．浅野先生は立体派．
+* 対数関数(**Log**arithm Func.): $\log{x}$, $\ln{x}$, $\log_2{x}$など．
+* 三角関数(Trigonometric Func.): $\sin(x)$, $\cos(x)$, $\tan(x)$など．
+* 逆三角関数(Inverse Trigonometric Func.): $\arcsin(x)$, $\arccos(x)$, $\arctan(x)$など．
+* 双曲線関数(**H**yperbolic Func.): $\sinh(x)$, $\cosh(x)$, $\tanh(x)$．
 
 ### 4.1.2. 初等関数でないもの
 
@@ -378,101 +378,101 @@ TeX: \sin
 ギリシャ小文字を使う関数は斜体，大文字は立体になる．
 
 * 斜体
-  * Bessel Function：First Kind - $J_\alpha(x)$，Second Kind - $Y_\alpha(x)$
-  * Riemann **Zeta** Function：$\zeta(s) = \sum_{n=1}^\infty\frac{1}{n^s}$
+  * Bessel Function: First Kind - $J_\alpha(x)$，Second Kind - $Y_\alpha(x)$
+  * Riemann **Zeta** Function: $\zeta(s) = \sum_{n=1}^\infty\frac{1}{n^s}$
 * 立体
-  * **L**ogarithmic **I**ntegral Function：${\rm li}(x)=\int_0^x \frac{dt}{\ln t}$
-  * **Gamma** Function：$\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt$，$\Re(x)>0$
+  * **L**ogarithmic **I**ntegral Function: ${\rm li}(x)=\int_0^x \frac{dt}{\ln t}$
+  * **Gamma** Function: $\Gamma(z)=\int_0^\infty t^{z-1}e^{-t}dt$，$\Re(x)>0$
 
 ### 4.1.3. 演算系 - 立体
 
 これらも立体が標準なのでバックスラッシュ`\`後にそれぞれの演算子を書けば良い．
 
-* 極限(**Lim**it)：$\lim_{x\rightarrow0}\frac{1}{x}$
-* 上限(**Sup**ermum)：$\sup_{x\in(0,\infty)}\frac{1}{x}=\infty$
-* 下限(**Inf**imum)：$\inf_{x\in(0,\infty)}\frac{1}{x}=0$
-* 総和(**Sum**mation)：$\sum_{n=1}^N n=\frac{n(n+1)}{2}$
-* 総乗(**Prod**uctなので`\Pi`ではなく`\prod`)：$\prod_{n=1}^Nn=N!$
+* 極限(**Lim**it): $\lim_{x\rightarrow0}\frac{1}{x}$
+* 上限(**Sup**ermum): $\sup_{x\in(0,\infty)}\frac{1}{x}=\infty$
+* 下限(**Inf**imum): $\inf_{x\in(0,\infty)}\frac{1}{x}=0$
+* 総和(**Sum**mation): $\sum_{n=1}^N n=\frac{n(n+1)}{2}$
+* 総乗(**Prod**uctなので`\Pi`ではなく`\prod`): $\prod_{n=1}^Nn=N!$
 
 ### 4.1.4. その他演算，関数
 
 一貫して内容が決まっている関数やその演算は全て立体で書く．
 
-* 最大値(**max**)：$a>b$の場合$a\equiv\max(a, b)$
+* 最大値(**max**): $a>b$の場合$a\equiv\max(a, b)$
   * e.g. ${\rm ReLU}(x) = \max(0, x)$
-* 最小値(**min**)：$a>b$の場合$b\equiv\min(a, b)$
+* 最小値(**min**): $a>b$の場合$b\equiv\min(a, b)$
   * e.g. ${\rm Clip}(x, L, U) = \max(L, \min(x, U))$
-* 平均2乗誤差(**M**ean **S**quared **E**rror)：$\boldsymbol{y,\hat{y}}\in\R^N$で${\rm MSE}(\boldsymbol{y,\hat{y}})=\frac{1}{N}\sum_{i=0}^{N-1}(y_i-\hat{y}_i)^2$
-* Sigmoid関数：$\sigma(\beta x)={\rm Sigmoid}(\beta x) = (1+e^{-\beta x})^{-1}$
-* 勾配(**Grad**ient)：${\rm grad}\phi=\left(\frac{\partial\phi}{\partial x},\frac{\partial\phi}{\partial y},\frac{\partial\phi}{\partial z}\right)$
-* 発散(**Div**ergence)：${\rm div}\bold{V}=\nabla\cdot\bold{V}=\frac{\partial\bold{V}_x}{\partial x}+\frac{\partial\bold{V}_y}{\partial y}+\frac{\partial\bold{V}_z}{\partial z}$
-* 回転(**Rot**ation)：${\rm rot}\bold{V}=\nabla\times\bold{V}=\left(\frac{\partial\bold{V}_z}{\partial y}-\frac{\partial\bold{V}_y}{\partial z},\frac{\partial\bold{V}_x}{\partial z}-\frac{\partial\bold{V}_z}{\partial x},\frac{\partial\bold{V}_y}{\partial x}-\frac{\partial\bold{V}_x}{\partial y}\right)$
+* 平均2乗誤差(**M**ean **S**quared **E**rror): $\boldsymbol{y,\hat{y}}\in\R^N$で${\rm MSE}(\boldsymbol{y,\hat{y}})=\frac{1}{N}\sum_{i=0}^{N-1}(y_i-\hat{y}_i)^2$
+* Sigmoid関数: $\sigma(\beta x)={\rm Sigmoid}(\beta x) = (1+e^{-\beta x})^{-1}$
+* 勾配(**Grad**ient): ${\rm grad}\phi=\left(\frac{\partial\phi}{\partial x},\frac{\partial\phi}{\partial y},\frac{\partial\phi}{\partial z}\right)$
+* 発散(**Div**ergence): ${\rm div}\bold{V}=\nabla\cdot\bold{V}=\frac{\partial\bold{V}_x}{\partial x}+\frac{\partial\bold{V}_y}{\partial y}+\frac{\partial\bold{V}_z}{\partial z}$
+* 回転(**Rot**ation): ${\rm rot}\bold{V}=\nabla\times\bold{V}=\left(\frac{\partial\bold{V}_z}{\partial y}-\frac{\partial\bold{V}_y}{\partial z},\frac{\partial\bold{V}_x}{\partial z}-\frac{\partial\bold{V}_z}{\partial x},\frac{\partial\bold{V}_y}{\partial x}-\frac{\partial\bold{V}_x}{\partial y}\right)$
 
-ハミルトニアン$H$は系によって形を変化させるので斜体．
+ハミルトニアン $H$は系によって形を変化させるので斜体．
 
 ### 4.1.5. 単位 - 立体
 
-基本的にSI単位系に従って記述する．必ず立体．かつ角括弧$[\cdot]$で括る．
+基本的にSI単位系に従って記述する．必ず立体．かつ角括弧 $[\cdot]$で括る．
 
-* 速度：$[{\rm m/s}]$，時間：$[{\rm s}]$，長さ：$[{\rm m}]$
-* 任意単位(arbitrary unit, SI単位系でない)：$[{\rm a.u.}]$または$[{\rm arbitrary\ unit}]$
+* 速度: $[{\rm m/s}]$，時間: $[{\rm s}]$，長さ: $[{\rm m}]$
+* 任意単位(arbitrary unit, SI単位系でない): $[{\rm a.u.}]$または $[{\rm arbitrary\ unit}]$
 
 ## 4.2. 変数，関数名の割り当て
 
-昨年度，某氏が動画を扱うときにframe番号として$f$を下添字で使い$\mathbf{I}_f$としていた[^1]が小谷先生には不評であった．理由は，$f$は関数(**f**unction)の$f$であるように，既に常用されている(小谷先生曰く"予約語"である)アルファベットであるからとしていた．改善案としてframe **i**ndexであるから$i$を使って$\mathbf{I}_i$とするのが良いとされた．索引(**i**ndex)でもあるし反復子(**i**terator)でもあるし整数(**i**nteger)でもあるので概ねこちらが無難である．もしくはframe **n**umberであるとして$n$を使って$\bold{I}_n$とする．
+昨年度，某氏が動画を扱うときにframe番号として $f$を下添字で使い $\mathbf{I}_f$としていた[^1]が小谷先生には不評であった．理由は， $f$は関数(**f**unction)の $f$であるように，既に常用されている(小谷先生曰く"予約語"である)アルファベットであるからとしていた．改善案としてframe **i**ndexであるから $i$を使って $\mathbf{I}_i$とするのが良いとされた．索引(**i**ndex)でもあるし反復子(**i**terator)でもあるし整数(**i**nteger)でもあるので概ねこちらが無難である．もしくはframe **n**umberであるとして $n$を使って $\bold{I}_n$とする．
 
 ### 4.2.1. "予約語"であるアルファベットたち
 
-* $a$，$b$：係数によく使われる．特に$a$は加速度(**A**cceleration)で使われる．
-* $c$，$C$：定数(**C**onstant)に使われる．場合によっては$Const.$とも書かれる．画像処理的には色(**C**olor)やチャンネル(**C**hannel)で使う．複素数(**C**omplex Number)の$c=a+ib$として使われたりもする．同様に複素数集合$\mathbb{C}$を表現する．
-* $d$：距離(**D**istance)，次元(**D**imension)，直径(**D**iameter)，微分(**D**ifferntiation)またその過程に使う$\Delta$(**D**elta)
-* $e$：ネイピア数$e=\sum_{n=0}^\infty\frac{1}{n!}\approx 2.71828182846$
-* $f$：先述の通り関数(**F**unction)として使われる．資料中で既に$f$が使われている場合は次の$g$が関数に使われる．
-  * 関数を表記する際は$f(\cdot),g(\cdot)$のようにして`\cdot`を入れるか，変数を$x$を入れる$f(x),g(x)$かする．
-  * 3つ目はもちろん$h(\cdot)$である．
-  * 特性が似ている場合は$f_1(\cdot),f_2(\cdot)$と添字変化も可能．特性が全く異なる場合は1つ後の文字が推奨される．
-  * 小谷先生的には特徴(**F**eature)としての$f$も許しているが，Scalarなわけ(笑)って思っているので立体太字$\bold{f}$になりがち．
-  * 電気電子・情報工学系で周波数(**F**requency)の$f$
-* $g$：重力加速度(**G**ravitational Acceleration)．万有引力定数を$G$，天体の質量を$M$，半径を$R$として$g=\frac{GM}{R^2}$
-* $h$：高さ(**H**eight)．もしくはプランク定数$h=6.62607015×10^{−34}[{\rm Js}]$
-* $i$：先述の通り反復子(**I**terator)として使われる．同一反復内で$i$が使われている場合は次の$j$が使われる．
-  * $\bold{a}\in\R^N$もしくは$\bold{a}=\begin{bmatrix} a_0& a_1& \cdots& a_{N-1}\end{bmatrix}$に対して$\sum_{i=0}^{N-1}a_i$など
-  * $\bold{B}\in\R^{N\times M}$もしくは$\bold{B}=\begin{bmatrix}b_{00}& b_{01}& \cdots& b_{0\ M-1} \\\vdots& \vdots& \ddots& \vdots \\b_{N-1\ 0}& b_{N-1\ 1}& \cdots& b_{N-1\ M-1} \end{bmatrix}$に対して$\sum_{i=0}^{N-1}\sum_{j=0}^{M-1}b_{ij}$など
-  * 画像では色方向のチャンネルもあるので$k$まで使われることもある．
-  * 虚数単位(**I**maginary Unit)として$i$が使われる．
-* $j$：加加速度(**J**erk)．電気電子系では電流$i$の先約があるので次の$j$が虚数単位として使われる．$\boldsymbol{j}$はMaxwell方程式における電流密度も表す．
-* $l$：長さ(**L**ength)．損失関数(**L**oss Function)では$L(y_i,\hat{y}_i)$や$\ell(y_i,\hat{y}_i)$もある．
+* $a$, $b$：係数によく使われる．特に $a$は加速度(**A**cceleration)で使われる．
+* $c$, $C$：定数(**C**onstant)に使われる．場合によっては $Const.$とも書かれる．画像処理的には色(**C**olor)やチャンネル(**C**hannel)で使う．複素数(**C**omplex Number)の $c=a+ib$として使われたりもする．同様に複素数集合 $\mathbb{C}$を表現する．
+* $d$：距離(**D**istance)，次元(**D**imension)，直径(**D**iameter)，微分(**D**ifferntiation)またその過程に使う $\Delta$(**D**elta)
+* $e$：ネイピア数 $e=\sum_{n=0}^\infty\frac{1}{n!}\approx 2.71828182846$
+* $f$：先述の通り関数(**F**unction)として使われる．資料中で既に $f$が使われている場合は次の $g$が関数に使われる．
+  * 関数を表記する際は $f(\cdot),g(\cdot)$のようにして`\cdot`を入れるか，変数を $x$を入れる $f(x),g(x)$かする．
+  * 3つ目はもちろん  $h(\cdot)$である．
+  * 特性が似ている場合は $f_1(\cdot),f_2(\cdot)$と添字変化も可能．特性が全く異なる場合は1つ後の文字が推奨される．
+  * 小谷先生的には特徴(**F**eature)としての$f$も許しているが，Scalarなわけ(笑)って思っているので立体太字 $\bold{f}$になりがち．
+  * 電気電子・情報工学系で周波数(**F**requency)の $f$
+* $g$：重力加速度(**G**ravitational Acceleration)．万有引力定数を $G$，天体の質量を $M$，半径を $R$として $g=\frac{GM}{R^2}$
+* $h$：高さ(**H**eight)．もしくはプランク定数 $h=6.62607015×10^{−34}[{\rm Js}]$
+* $i$：先述の通り反復子(**I**terator)として使われる．同一反復内で $i$が使われている場合は次の $j$が使われる．
+  * $\bold{a}\in\mathbb{R}^N$もしくは $\bold{a}=\begin{bmatrix} a_0& a_1& \cdots& a_{N-1}\end{bmatrix}$に対して $\sum_{i=0}^{N-1}a_i$など
+  * $\bold{B}\in\mathbb{R}^{N\times M}$もしくは $\bold{B}=\begin{bmatrix}b_{00}& b_{01}& \cdots& b_{0\ M-1} \\\vdots& \vdots& \ddots& \vdots \\b_{N-1\ 0}& b_{N-1\ 1}& \cdots& b_{N-1\ M-1} \end{bmatrix}$に対して $\sum_{i=0}^{N-1}\sum_{j=0}^{M-1}b_{ij}$など
+  * 画像では色方向のチャンネルもあるので $k$まで使われることもある．
+  * 虚数単位(**I**maginary Unit)として $i$が使われる．
+* $j$：加加速度(**J**erk)．電気電子系では電流 $i$の先約があるので次の $j$が虚数単位として使われる. $\boldsymbol{j}$はMaxwell方程式における電流密度も表す．
+* $l$：長さ(**L**ength)．損失関数(**L**oss Function)では $L(y_i,\hat{y}_i)$や $\ell(y_i,\hat{y}_i)$もある．
 * $m$：質量(**M**ass)．
-* $n$：数(**N**umber)．場合によっては$l,m$も個数で使われる．信号処理では**N**oiseの$N$．自然数(**N**atural Number)集合$\mathbb{N}$．
-* $p$，$q$：整数論で数のペア(**P**air)として並べて使われる．
+* $n$：数(**N**umber)．場合によっては $l,m$も個数で使われる．信号処理では**N**oiseの  $N$．自然数(**N**atural Number)集合 $\mathbb{N}$．
+* $p$, $q$：整数論で数のペア(**P**air)として並べて使われる．
   * $p$は運動量(Momentum)．
-  * $q$は電荷(Electric Charge)．有理数集合$\mathbb{Q}$．
-* $r$：比率(**R**ate，**R**atio)．半径(**R**adius)．整数論では余り(**R**emainder)．実数(**R**eal Number)集合$\mathbb{R}$．
-  * 整式(**P**olynomial) $P(x)$を割る数(**D**ivisor) $D(x)$で割るとき，商(**Q**uotient)を$Q(x)$，余り(**R**emainder)を$R(x)$として$P(x)=D(x)Q(x)+R(x)$と書くことができる．
-* $s$：統計では標準偏差(**S**tandard deviation)．$\sigma$の$s$を取ってきている説もあり．信号処理では**S**ignalの$S$．Riemann Zeta関数では複素数$s=a+ib$として使われる．
+  * $q$は電荷(Electric Charge)．有理数集合 $\mathbb{Q}$．
+* $r$：比率(**R**ate，**R**atio)．半径(**R**adius)．整数論では余り(**R**emainder)．実数(**R**eal Number)集合 $\mathbb{R}$．
+  * 整式(**P**olynomial) $P(x)$を割る数(**D**ivisor) $D(x)$で割るとき，商(**Q**uotient)を $Q(x)$，余り(**R**emainder)を $R(x)$として $P(x)=D(x)Q(x)+R(x)$と書くことができる．
+* $s$：統計では標準偏差(**S**tandard deviation).  $\sigma$の $s$を取ってきている説もあり．信号処理では**S**ignalの $S$．Riemann Zeta関数では複素数 $s=a+ib$として使われる．
 * $t$：時間(**T**ime)，張力(**T**ension)．
 * $u$：システムへの入力(制御工学)．
 * $v$：速度(**V**elocity)．システムの出力(制御工学)
 * $w$：幅(**W**idth)．機械学習では重み(**W**eight)で多用される．
 * $x$：変数である．1次元の横軸方向でも使われる．制御工学ではシステムの内部状態を表す．
-* $y$：主に$x$に対する1変数関数$y=f(x)$の出力で使われる．2変数関数$z=f(x,y)$であれば変数に割り当てられる．2次元平面では縦軸方向として使われる．
-* $z$：主に2変数関数$z=f(x,y)$の出力．3次元平面では高さ(深度)軸方向として使われる．一般的な複素関数論では複素数$z=x+iy$として使われる．GANのNoise(発音:nɔi**z**)で$z$もある．整数(**Z**ahlen)集合$\mathbb{Z}$．
+* $y$：主に $x$に対する1変数関数 $y=f(x)$の出力で使われる．2変数関数 $z=f(x,y)$であれば変数に割り当てられる．2次元平面では縦軸方向として使われる．
+* $z$：主に2変数関数 $z=f(x,y)$の出力．3次元平面では高さ(深度)軸方向として使われる．一般的な複素関数論では複素数 $z=x+iy$として使われる．GANのNoise(発音:nɔi**z**)で $z$もある．整数(**Z**ahlen)集合 $\mathbb{Z}$．
 * $\alpha,\beta,\gamma$：係数
 * $\delta,\Delta$：微小変化
-* $\varepsilon$：`\varepsilon`の方．誘電率や微小値を表す．微小値のときは$\epsilon$`\epsilon`も使われる．最近は機械学習の論文で誤差関数(**E**rror Function)の$\varepsilon(y_i,\hat{y}_i)$として使われる．
-* $\eta$：最近は機械学習系の論文で学習率(learning rate)で使われる．数式外では略記$lr$も許されている．
-* $\theta$：位相及び角度で使われる．機械学習ではハイパーパラメータを示す．仰角は$\varphi$である．
+* $\varepsilon$：`\varepsilon`の方．誘電率や微小値を表す．微小値のときは $\epsilon$`\epsilon`も使われる．最近は機械学習の論文で誤差関数(**E**rror Function)の $\varepsilon(y_i,\hat{y}_i)$として使われる．
+* $\eta$：最近は機械学習系の論文で学習率(learning rate)で使われる．数式外では略記 $lr$も許されている．
+* $\theta$：位相及び角度で使われる．機械学習ではハイパーパラメータを示す．仰角は $\varphi$である．
 * $\lambda$：波長(Wave **L**ength)．計算で求めたい未知係数．特に固有値を求めるときなど．
-* $\mu$：透磁率$[{\rm H/m}]$．統計ではよく平均値として使われる．
-* $\nu$：物理学界隈での周波数$[{\rm Hz}]$．$f$は力(Force)で先約ありのため．
+* $\mu$：透磁率 $[{\rm H/m}]$．統計ではよく平均値として使われる．
+* $\nu$：物理学界隈での周波数 $[{\rm Hz}]$. $f$は力(Force)で先約ありのため．
 * $\pi$：円周率．
-* $\sigma$：標準偏差．関数では標準Sigmoid関数$\sigma(x)=(1+e^{-x})^{-1}$
+* $\sigma$：標準偏差．関数では標準Sigmoid関数 $\sigma(x)=(1+e^{-x})^{-1}$
 
 記号が何に使われているかよく調べてから表現に使うこと．既に1文字での表現はほぼ埋まっていることに注意しながら，画像処理の表現として適切なものを選ぶこと．物理界隈での表現は理解した上で無視して良い．
 
-本来$\bold{I}$は単位行列(**I**dentity Matrix)で使われるが画像処理研なので**I**mageとして使うことが許されている．
+本来 $\bold{I}$は単位行列(**I**dentity Matrix)で使われるが画像処理研なので**I**mageとして使うことが許されている．
 
-オー$o$やオミクロン$\omicron$はゼロ$0$と区別つかないため非推奨．入力画像$\bold{I}_i$に対する出力画像$\bold{I}_o$としたら微妙な顔された．まだ入力画像$\bold{I}_x$に対する出力画像$\bold{I}_y$の方がマシのよう．
+オー $o$やオミクロン $\omicron$はゼロ $0$と区別つかないため非推奨．入力画像 $\mathbf{I}_i$に対する出力画像 $\mathbf{I}_o$としたら微妙な顔された．まだ入力画像 $\mathbf{I}_x$に対する出力画像 $\mathbf{I}_y$の方がマシのよう．
 
 結果論，いろんなアルファベットやギリシャ文字がある中，割り当てが気に入るかどうかは小谷先生次第である．
 
@@ -490,7 +490,7 @@ TeX: \sin
 
 <img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-17 16.32.42.png" alt="スクリーンショット 2022-08-17 16.32.42" style="zoom:67%;" />
 
-画像生成モデル(Image **G**enerator)があるなら，関数$G(\cdot)$として定義する．
+画像生成モデル(Image **G**enerator)があるなら，関数 $G(\cdot)$として定義する．
 
 # 5. 優先順位
 

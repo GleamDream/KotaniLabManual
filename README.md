@@ -64,9 +64,9 @@
 
 「章」を飛ばしていきなり「節，項」が出てきたことを指摘された．改善結果，「章，節，項」の順に並んだ．
 
- **節(e.g. "2.1.")**のスライドがあるならその前に必ず**章(e.g. "2.")**のスライドが必要である．
+したがって, **節(e.g. "2.1.")** のスライドがあるならその前に必ず **章(e.g. "2.")** のスライドが必要である．
 
-同様に，**項(e.g. "2.1.1.")**のスライドがあるならその前に**節(e.g. "2.1.")**のスライドが必要である．
+同様に, **項(e.g. "2.1.1.")** のスライドがあるならその前に **節(e.g. "2.1.")** のスライドが必要である．
 
 ### 1.1.2. 話がつながっていない例
 
@@ -137,7 +137,7 @@ HSV色空間上で[Adobe Color](https://color.adobe.com/ja/create/color-wheel)�
 
 ## 2.3. 文章の表現に明確な区別をつけること
 
- **説明(Describe, Explain)**と**箇条書き(Itemize)**や**列挙(Enumerate)**を記述するときは明確な区別が必要．
+文章において, **説明(Describe, Explain)** と **箇条書き(Itemize)** や **列挙(Enumerate)** を記述するときは明確な区別が必要．
 
 ### 2.3.1. ダメな例 - 池村のケース
 
@@ -398,28 +398,28 @@ TeX: \sin
 
 一貫して内容が決まっている関数やその演算は全て立体で書く．
 
-* 最大値(**max**): $a>b$の場合$a\equiv\max(a, b)$
+* 最大値(**max**): $a>b$の場合 $a\equiv\max(a, b)$
   * e.g. ${\rm ReLU}(x) = \max(0, x)$
-* 最小値(**min**): $a>b$の場合$b\equiv\min(a, b)$
+* 最小値(**min**): $a>b$の場合 $b\equiv\min(a, b)$
   * e.g. ${\rm Clip}(x, L, U) = \max(L, \min(x, U))$
-* 平均2乗誤差(**M**ean **S**quared **E**rror): $\boldsymbol{y,\hat{y}}\in\R^N$で${\rm MSE}(\boldsymbol{y,\hat{y}})=\frac{1}{N}\sum_{i=0}^{N-1}(y_i-\hat{y}_i)^2$
+* 平均2乗誤差(**M**ean **S**quared **E**rror): $\boldsymbol{y,\hat{y}}\in\R^N$で ${\rm MSE}(\boldsymbol{y,\hat{y}})=\frac{1}{N}\sum_{i=0}^{N-1}(y_i-\hat{y}_i)^2$
 * Sigmoid関数: $\sigma(\beta x)={\rm Sigmoid}(\beta x) = (1+e^{-\beta x})^{-1}$
 * 勾配(**Grad**ient): ${\rm grad}\phi=\left(\frac{\partial\phi}{\partial x},\frac{\partial\phi}{\partial y},\frac{\partial\phi}{\partial z}\right)$
-* 発散(**Div**ergence): ${\rm div}\bold{V}=\nabla\cdot\bold{V}=\frac{\partial\bold{V}_x}{\partial x}+\frac{\partial\bold{V}_y}{\partial y}+\frac{\partial\bold{V}_z}{\partial z}$
-* 回転(**Rot**ation): ${\rm rot}\bold{V}=\nabla\times\bold{V}=\left(\frac{\partial\bold{V}_z}{\partial y}-\frac{\partial\bold{V}_y}{\partial z},\frac{\partial\bold{V}_x}{\partial z}-\frac{\partial\bold{V}_z}{\partial x},\frac{\partial\bold{V}_y}{\partial x}-\frac{\partial\bold{V}_x}{\partial y}\right)$
+* 発散(**Div**ergence): ${\rm div}\mathbf{V}=\nabla\cdot\mathbf{V}=\frac{\partial\mathbf{V}_x}{\partial x}+\frac{\partial\mathbf{V}_y}{\partial y}+\frac{\partial\mathbf{V}_z}{\partial z}$
+* 回転(**Rot**ation): ${\rm rot}\mathbf{V}=\nabla\times\mathbf{V}=\left(\frac{\partial\mathbf{V}_z}{\partial y}-\frac{\partial\mathbf{V}_y}{\partial z},\frac{\partial\mathbf{V}_x}{\partial z}-\frac{\partial\mathbf{V}_z}{\partial x},\frac{\partial\mathbf{V}_y}{\partial x}-\frac{\partial\mathbf{V}_x}{\partial y}\right)$
 
 ハミルトニアン $H$は系によって形を変化させるので斜体．
 
 ### 4.1.5. 単位 - 立体
 
-基本的にSI単位系に従って記述する．必ず立体．かつ角括弧 $[\cdot]$で括る．
+基本的にSI単位系に従って記述する．必ず立体．かつ角括弧 $[\cdot]$ で括る．
 
 * 速度: $[{\rm m/s}]$，時間: $[{\rm s}]$，長さ: $[{\rm m}]$
 * 任意単位(arbitrary unit, SI単位系でない): $[{\rm a.u.}]$または $[{\rm arbitrary\ unit}]$
 
 ## 4.2. 変数，関数名の割り当て
 
-昨年度，某氏が動画を扱うときにframe番号として $f$を下添字で使い $\mathbf{I}_f$としていた[^1]が小谷先生には不評であった．理由は， $f$は関数(**f**unction)の $f$であるように，既に常用されている(小谷先生曰く"予約語"である)アルファベットであるからとしていた．改善案としてframe **i**ndexであるから $i$を使って $\mathbf{I}_i$とするのが良いとされた．索引(**i**ndex)でもあるし反復子(**i**terator)でもあるし整数(**i**nteger)でもあるので概ねこちらが無難である．もしくはframe **n**umberであるとして $n$を使って $\bold{I}_n$とする．
+昨年度，某氏が動画を扱うときにframe番号として $f$ を下添字で使い $\mathbf{I}_f$ としていた[^1]が小谷先生には不評であった．理由は， $f$ は関数(**f**unction)の $f$ であるように，既に常用されている(小谷先生曰く"予約語"である)アルファベットであるからとしていた．改善案としてframe **i**ndexであるから $i$ を使って $\mathbf{I}_i$ とするのが良いとされた．索引(**i**ndex)でもあるし反復子(**i**terator)でもあるし整数(**i**nteger)でもあるので概ねこちらが無難である．もしくはframe **n**umberであるとして $n$ を使って $\bold{I}_n$ とする．
 
 ### 4.2.1. "予約語"であるアルファベットたち
 
@@ -431,13 +431,13 @@ TeX: \sin
   * 関数を表記する際は $f(\cdot),g(\cdot)$のようにして`\cdot`を入れるか，変数を $x$を入れる $f(x),g(x)$かする．
   * 3つ目はもちろん  $h(\cdot)$である．
   * 特性が似ている場合は $f_1(\cdot),f_2(\cdot)$と添字変化も可能．特性が全く異なる場合は1つ後の文字が推奨される．
-  * 小谷先生的には特徴(**F**eature)としての$f$も許しているが，Scalarなわけ(笑)って思っているので立体太字 $\bold{f}$になりがち．
+  * 小谷先生的には特徴(**F**eature)としての$f$も許しているが，Scalarなわけ(笑)って思っているので立体太字 $\mathbf{f}$ になりがち．
   * 電気電子・情報工学系で周波数(**F**requency)の $f$
 * $g$：重力加速度(**G**ravitational Acceleration)．万有引力定数を $G$，天体の質量を $M$，半径を $R$として $g=\frac{GM}{R^2}$
 * $h$：高さ(**H**eight)．もしくはプランク定数 $h=6.62607015×10^{−34}[{\rm Js}]$
 * $i$：先述の通り反復子(**I**terator)として使われる．同一反復内で $i$が使われている場合は次の $j$が使われる．
-  * $\bold{a}\in\mathbb{R}^N$もしくは $\bold{a}=\begin{bmatrix} a_0& a_1& \cdots& a_{N-1}\end{bmatrix}$に対して $\sum_{i=0}^{N-1}a_i$など
-  * $\bold{B}\in\mathbb{R}^{N\times M}$もしくは $\bold{B}=\begin{bmatrix}b_{00}& b_{01}& \cdots& b_{0\ M-1} \\\vdots& \vdots& \ddots& \vdots \\b_{N-1\ 0}& b_{N-1\ 1}& \cdots& b_{N-1\ M-1} \end{bmatrix}$に対して $\sum_{i=0}^{N-1}\sum_{j=0}^{M-1}b_{ij}$など
+  * $\mathbf{a}\in\mathbb{R}^N$もしくは $\mathbf{a}=\begin{bmatrix} a_0& a_1& \cdots& a_{N-1}\end{bmatrix}$に対して $\sum_{i=0}^{N-1}a_i$など
+  * $\mathbf{B}\in\mathbb{R}^{N\times M}$もしくは $\mathbf{B}=\begin{bmatrix}b_{00}& b_{01}& \cdots& b_{0\ M-1} \\\vdots& \vdots& \ddots& \vdots \\b_{N-1\ 0}& b_{N-1\ 1}& \cdots& b_{N-1\ M-1} \end{bmatrix}$に対して $\sum_{i=0}^{N-1}\sum_{j=0}^{M-1}b_{ij}$など
   * 画像では色方向のチャンネルもあるので $k$まで使われることもある．
   * 虚数単位(**I**maginary Unit)として $i$が使われる．
 * $j$：加加速度(**J**erk)．電気電子系では電流 $i$の先約があるので次の $j$が虚数単位として使われる. $\boldsymbol{j}$はMaxwell方程式における電流密度も表す．
@@ -470,9 +470,9 @@ TeX: \sin
 
 記号が何に使われているかよく調べてから表現に使うこと．既に1文字での表現はほぼ埋まっていることに注意しながら，画像処理の表現として適切なものを選ぶこと．物理界隈での表現は理解した上で無視して良い．
 
-本来 $\bold{I}$は単位行列(**I**dentity Matrix)で使われるが画像処理研なので**I**mageとして使うことが許されている．
+本来 $\bold{I}$ は単位行列(**I**dentity Matrix)で使われるが画像処理研なので**I**mageとして使うことが許されている．
 
-オー $o$やオミクロン $\omicron$はゼロ $0$と区別つかないため非推奨．入力画像 $\mathbf{I}_i$に対する出力画像 $\mathbf{I}_o$としたら微妙な顔された．まだ入力画像 $\mathbf{I}_x$に対する出力画像 $\mathbf{I}_y$の方がマシのよう．
+オー $o$ やオミクロン $\omicron$ はゼロ $0$ と区別つかないため非推奨．入力画像 $\mathbf{I}_i$ に対する出力画像 $\mathbf{I}_o$ としたら微妙な顔された．まだ入力画像 $\mathbf{I}_x$ に対する出力画像 $\mathbf{I}_y$ の方がマシのよう．
 
 結果論，いろんなアルファベットやギリシャ文字がある中，割り当てが気に入るかどうかは小谷先生次第である．
 
@@ -490,7 +490,7 @@ TeX: \sin
 
 <img src="/Users/prom/Library/Application Support/typora-user-images/スクリーンショット 2022-08-17 16.32.42.png" alt="スクリーンショット 2022-08-17 16.32.42" style="zoom:67%;" />
 
-画像生成モデル(Image **G**enerator)があるなら，関数 $G(\cdot)$として定義する．
+画像生成モデル(Image **G**enerator)があるなら，関数 $G(\cdot)$ として定義する．
 
 # 5. 優先順位
 

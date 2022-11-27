@@ -4,7 +4,6 @@ from typing import Callable
 
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 
 def load_data(base, ext = "png", maximum = 1e9):
     ret = list()

@@ -1,9 +1,8 @@
 from __future__ import annotations
-from typing import List, Dict
+from typing import List, Dict, Callable
 
 import os
 from glob import glob
-from typing import Callable
 
 import cv2
 import numpy as np

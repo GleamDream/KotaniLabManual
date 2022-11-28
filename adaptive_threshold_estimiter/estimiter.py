@@ -44,7 +44,7 @@ class AdaptiveThresholdEstimiter:
         return cv2.adaptiveThreshold(x, 255, self.method_name[self.method], cv2.THRESH_BINARY, self.block_size, self.C)
     
     def predict(self, x):
-        return np.array([self.evaluate(self._predict_one(_x)) for _x in x])
+        return np.array([self._predict_one(_x) for _x in x])
     
     def fit(self, x, n_trials = 20):
         import optuna
@@ -53,7 +53,7 @@ class AdaptiveThresholdEstimiter:
             self.method = trial.suggest_categorical('method', list(self.method_name.keys()))
             self.block_size = trial.suggest_categorical('block_size', [3, 5, 7, 9, 11, 13])
             self.C = trial.suggest_int('C', -10, 10)
-            return self.predict(x).sum()
+            return np.array(list(map(self.evaluate, self.predict(x)))).sum()
 
         study = optuna.create_study(direction = self.direction, sampler = optuna.samplers.TPESampler(seed = 1))
         study.optimize(bayes_objective, n_trials = n_trials)

@@ -15,11 +15,15 @@
 
 ### 必要なライブラリ
 
+* [optuna](https://optuna.readthedocs.io/en/stable/installation.html): ベイズ最適化
+* [numpy](https://numpy.org/install/): 配列演算
+* [opencv-python](https://pypi.org/project/opencv-python/): 画像処理
+* [matplotlib](https://matplotlib.org/stable/users/installing/index.html): 結果の描画
+
+一括インストール
+
 ```python
-matplotlib
-optuna
-numpy
-opencv-python
+python -m pip install numpy matplotlib opencv-python optuna
 ```
 
 ### 使い方 - import
@@ -76,10 +80,10 @@ print(ate.best_params_) # 最適化されたMethod, BlockSize, Cを表示する
   * GAUSSIANしか勝たん
 * Block Size:
   * 小さい場合: キャニー変換みたいなエッジ検出になる
-  * 大きい場合: サイズ未満の箇所が抜かれる
+  * 大きい場合: 小さい場合同様，サイズ未満の箇所が抜かれる
 * C:
   * 負: 元々`0`だった場所は`0`になる
-  * 正: 元々`0`だった場所は`255`になる
+  * 正: 色に変化がない箇所は`255`になる
 
 `Block Size = 3, C = -10`の場合
 

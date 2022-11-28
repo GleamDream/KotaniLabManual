@@ -1,6 +1,17 @@
 # AdaptiveThresholdEstimiterについて
 
-目的関数に応じてMethod, BlockSize, Cを決めてくれる．
+評価関数に応じて最適な評価値になるようにMethod, BlockSize, Cを決めてくれる
+
+* メリット
+  * GridSearchより計算試行回数が少なくて良い
+  * GridSearchでは，パラメータの種類数を $n$, $i$番目のパラメータ数が $p_i$とすると, $\prod\limits_{i=0}^n p_i$回の試行をすることになる．
+  * 今回はMethod, BlockSize, Cの3種類あって，それぞれ
+    * Method: `ADAPTIVE_THRESH_MEAN_C`, `ADAPTIVE_THRESH_GAUSSIAN_C`の2個
+    * BlockSize: `3`, `5`, `7`, `9`, `11`, `13`の6個
+    * C: $[-10, 10]$の21個
+  * なので，合計 $2 \times 6 \times 21 = 252$パターンもある．
+* デメリット
+  * GridSearchの方が良い結果を出す可能性を否定できない
 
 ### 必要なライブラリ
 

@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 
 from estimiter import AdaptiveThresholdEstimiter, load_data, count_area, augment_area
 
-def augment_area2(img) -> int:
+def augment_area2(img: np.ndarray) -> int:
     return (img.shape[0] * img.shape[1]) - np.count_nonzero(img)
 
 if __name__ == "__main__":
